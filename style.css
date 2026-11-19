@@ -229,7 +229,7 @@ h2{margin:0 0 10px;font:700 1.95rem/1.1 'Barlow Condensed',sans-serif}
 .foot .vat{margin:0;background:#fff;border-radius:var(--r);box-shadow:0 1px 3px rgba(0,0,0,.16);padding:16px 18px;width:100%;box-sizing:border-box;font-size:1.1rem;color:var(--ink2)}
 
 /* prijava kvara: gumb na glavnoj stranici */
-.rp-fab{position:fixed;left:14px;bottom:14px;z-index:30;background:#d10000;color:#fff;text-decoration:none;font:800 1.15rem/1 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:0 22px 0 16px;min-height:56px;border-radius:99px;display:flex;align-items:center;gap:10px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.rp-fab{position:fixed;left:14px;bottom:14px;z-index:30;background:#d10000;color:#fff;text-decoration:none;font:800 1.15rem/1 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:0 32px 0 26px;min-height:56px;justify-content:center;border-radius:99px;display:flex;align-items:center;gap:10px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
 .rp-fab:hover{background:#e60000}
 .rp-fab svg{flex:none}
 
@@ -268,3 +268,12 @@ h2{margin:0 0 10px;font:700 1.95rem/1.1 'Barlow Condensed',sans-serif}
 .rp-thx h2{font-size:2rem}.rp-thx p{margin:0 0 10px;font-weight:600}
 .rp-test{background:#fff4e0;border:2px solid var(--sun);border-radius:10px;padding:12px 14px}
 @media (max-width:420px){.rp-nums{grid-template-columns:repeat(3,1fr)}}
+
+.bx-art{display:block;width:100%;max-width:420px;height:auto;margin:0 auto 14px;border-radius:14px}
+.bx-lamp{animation:bxl 1s steps(2,end) infinite}
+.bx-lampH{transform-box:fill-box;transform-origin:center;animation:bxh 1s ease-out infinite}
+.bx-hoseL{transform-origin:112px 58px;animation:bxs 3.2s ease-in-out infinite}
+.bx-spray{stroke-dasharray:6 8;animation:bxd .6s linear infinite}
+@keyframes bxl{50%{opacity:.35}}@keyframes bxh{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(2.4)}}
+@keyframes bxs{50%{transform:rotate(3deg)}}@keyframes bxd{to{stroke-dashoffset:-14}}
+@media (prefers-reduced-motion:reduce){.bx-lamp,.bx-lampH,.bx-hoseL,.bx-spray{animation:none}}
